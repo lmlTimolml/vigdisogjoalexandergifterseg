@@ -1,0 +1,127 @@
+---
+import Button from '../components/Button.astro';
+import background from '../assets/leaves_n_flag.png';
+---
+
+
+<section class="flex flex-col items-center w-full scroll-smooth">
+<img id="background" src={background.src} alt="" fetchpriority="high" class="w-full -mt-30" />
+
+	<header class="relative flex flex-col items-center w-full uppercase">
+		<h1 class="absolute font-extralight -ml-28">Velkommen til</h1>
+		<h1 class="absolute font-bold text-2xl"><span class="text-5xl">17</span>.&nbsp;&nbsp;&nbsp;mai-feiring på Nærsnes</h1>
+		<h1 class="absolute font-bold text-5xl -top-6 ml-66">2025</h1>
+    </header>
+    <nav class="flex flex-col items-center mt-20">
+        <a href="#prog" class="font-light hover:font-bold transition-all ease-linear duration-100 uppercase">PROGRAM</a>
+        <a href="#sang1" class="font-light hover:font-bold transition-all ease-linear duration-100 uppercase">JA VI ELSKER</a>
+        <a href="#sang2" class="font-light hover:font-bold transition-all ease-linear duration-100 uppercase">NORGE I RØDT, HVITT OG BLÅTT</a></nav>
+    <main id="prog" class="mt-10 max-w-[55ch] mx-10">
+        <h2 class="font-bold text-2xl uppercase mb-2">Program for dagen</h2>
+        <div class="flex mb-5">
+            <h3 class="mr-2 font-bold">08:00</h3>
+            <p>Flaggheising på Nærsnes skole og ankeret</p>
+        </div>
+        <div class="flex mb-5">
+            <h3 class="mr-2 font-bold">11:30</h3>
+            <p>En av kioskene åpner for salg</p>
+        </div>
+        <div class="flex mb-5">
+            <h3 class="mr-2 font-bold">11:45</h3>
+            <p>Senest oppmøte på Nopec, oppstilling for barnetog</p>
+        </div>
+        <div class="flex mb-5">
+            <h3 class="mr-2 font-bold">12:00</h3>
+            <p>Barnetoget går fra Nopec, Baardsudveien 2<br>
+                Toget går videre via Sundbyveien – Joker – Gartnerveien<br>
+                – Åkerhagan – Skolefaret – Nærsnes skole<br>
+                <span class="font-bold">Ved Joker spiller Frydenlund Seniorkorps<br>
+                og alle synger “Norge i rødt, hvitt og blått</span></p>
+        </div>
+        <div class="flex mb-5">
+            <h3 class="mr-2 font-bold">12:45</h3>
+            <p>Barnetoget ankommer Nærsnes skole<br>
+                <span class="font-bold">Frydenlynd seniorkorps</span> spiller<br>
+                med <span class="font-bold">Katharina Frogner Kockum</span> som forsanger<br>
+                Alle synger; <span class="font-bold">“Norge i rødt hvitt og blått”</span>, 1. vers<br>
+                Alle synger; <span class="font-bold">“Ja, vi elsker”</span> 1., 7., og 8. strofe</p>
+        </div>
+        <div class="flex mb-5">
+            <h3 class="mr-2 font-bold">13:00</h3>
+            <p>Tale for dagen ved 7. klasse elever<br>
+                <span class="font-bold">Opptreden ved 4. trinns elever</span></p>
+        </div>
+        <div class="flex mb-5">
+            <h3 class="mr-2 font-bold">13:15</h3>
+            <p>Salg av kaffe, kaker, is, brus og pølser åpner<br>
+                Lekeboder åpner<br>
+                Lynloddsalg starter</p>
+        </div>
+        <div class="flex mb-5">
+            <h3 class="mr-2 font-bold">14:30</h3>
+            <p>Dagen avsluttes med den <span class="font-bold">tradisjonelle tautrekkingskonkurransen</span></p>
+        </div>
+    </main>
+    <main id="sang1" class="mt-20 max-w-[55ch] text-center">
+        <h2 class="font-bold text-2xl uppercase mb-2">Ja vi elsker dette landet</h2>
+        <div class="flex flex-col mb-5">
+            <p class="mb-5">Ja, vi elsker dette landet<br>
+                som det stiger frem,<br>
+                furet, værbitt over vannet<br>
+                med de tusen hjem.<br>
+                Elsker, elsker det og tenker<br>
+                på vår far og mor<br>
+                :/: og den saganatt som senker<br>
+                drømmer på vår jord :/:</p>
+                
+                <p class="mb-5">Norske mann i hus og hytte,<br>
+                takk din store Gud!<br>
+                Landet ville han beskytte<br>
+                skjønt det mørkt så ut.<br>
+                Alt hva fedrene har kjempet,<br>
+                mødrene har grett,<br>
+                :/: har den Herre stille lempet<br>
+                så vi vant vår rett. :/:</p>
+
+                <p class="mb-5">Ja, vi elsker dette landet<br>
+                som det stiger frem,<br>
+                furet, værbitt over vannet<br>
+                med de tusen hjem.<br>
+                Og som fedres kamp har hevet<br>
+                det av nød til seir:<br>
+                :/: også vi, når det blir krevet,<br>
+                for dets fred slår leir. :/:</p>
+                
+                <small>(Bjørnstjerne Bjørnson / Richard Nordraak)</small>
+        </div>
+        </main>
+        <main id="sang2" class="mt-20 max-w-[55ch] text-center mb-10">
+            <h2 class="font-bold text-2xl uppercase mb-2">Norge i rødt, hvitt og blått</h2>
+            <div class="flex flex-col mb-5">
+                <p class="mb-5">Hvorhen du går i li og fjell,<br>
+                    en vinterdag, en sommerkveld,<br>
+                    ved fjord og fossevell.</p>
+
+                    <p class="mb-5">Fra eng og mo med furutrær,<br>
+                    fra havets bryn med fiskevær<br>
+                    og til de hvite skjær.</p>
+                    
+                    <p class="mb-5">Møter du landet i trefarvet drakt,<br>
+                    svøpt i et gjenskinn av flaggets<br>
+                    farveprakt.</p>
+            
+                    <p class="mb-5">Se, en hvitstammet bjerk oppi heien,<br>
+                    rammer stripen av blåklokker inn.<br>
+                    Mot den rødmalte stuen ved veien,<br>
+                    det er flagget som vaier i vind.</p>
+                    
+                    <p class="mb-5">Ja, så hvit som det hvite er sneen,<br>
+                    og det røde har kveldssolen fått,<br>
+                    og det blå gav sin farve til breen,<br>
+                    det er Norge i rødt, hvitt og blått.</p>
+                    <small>(Finn Bø / Bias Bernhoft / Arild Feldborg)</small>
+            </div>
+            <Button />
+            </main>
+            <img id="background" src={background.src} alt="" fetchpriority="high" class="w-full rotate-180" />
+        </section>
