@@ -1,10 +1,9 @@
 ---
-import Button from '../components/Button.astro';
 import background from '../assets/leaves_n_flag.png';
 ---
 
 
-<section class="flex flex-col items-center w-full scroll-smooth">
+<section id="top" class="flex flex-col items-center w-full">
 <img id="background-top" src={background.src} alt="" fetchpriority="high" class="w-full" />
 
 	<header class="relative flex flex-col items-center w-full uppercase mx-5">
@@ -16,6 +15,7 @@ import background from '../assets/leaves_n_flag.png';
         <a href="#prog" class="font-light hover:font-bold transition-all ease-linear duration-100 uppercase">PROGRAM</a>
         <a href="#sang1" class="font-light hover:font-bold transition-all ease-linear duration-100 uppercase">JA VI ELSKER</a>
         <a href="#sang2" class="font-light hover:font-bold transition-all ease-linear duration-100 uppercase">NORGE I RØDT, HVITT OG BLÅTT</a></nav>
+        <a href="#priser" class="font-light hover:font-bold transition-all ease-linear duration-100 uppercase">PRISLISTE KIOSK</a></nav>
     <main id="prog" class="mt-10 max-w-[55ch] mx-10">
         <h2 class="font-bold text-2xl uppercase mb-2">Program for dagen</h2>
         <div class="flex mb-5">
@@ -84,7 +84,7 @@ import background from '../assets/leaves_n_flag.png';
                 <small>(Bjørnstjerne Bjørnson / Richard Nordraak)</small>
         </div>
         </main>
-        <main id="sang2" class="mt-20 max-w-[55ch] text-center mb-10">
+        <main id="sang2" class="mt-20 max-w-[55ch] text-center">
             <h2 class="font-bold text-[20px] uppercase mb-2">Norge i rødt, hvitt og blått</h2>
             <div class="flex flex-col mb-5">
                 <p class="mb-5">Hvorhen du går i li og fjell,<br>
@@ -110,7 +110,48 @@ import background from '../assets/leaves_n_flag.png';
                     det er Norge i rødt, hvitt og blått.</p>
                     <small>(Finn Bø / Bias Bernhoft / Arild Feldborg)</small>
             </div>
-            <Button />
             </main>
+            <main id="priser" class="w-full px-5 sm:w-[40%] max-w-[400px] mt-20 text-center mb-10 uppercase transition-all duration-300 ease-linear">
+                <h2 class="font-bold text-[20px] mb-2">Prisliste Kiosk</h2>
+                <div class="flex justify-between mb-5">
+                    <p class="mr-2">Saft</p>
+                    <p class="mr-2 font-bold">10 kr</p>
+                </div>
+                <div class="flex justify-between mb-5">
+                    <p class="mr-2">Lykkehjul</p>
+                    <p class="mr-2 font-bold">10 kr</p>
+                </div>
+                <div class="flex justify-between mb-5">
+                    <p class="mr-2">Lodd</p>
+                    <p class="mr-2 font-bold">20 kr</p>
+                </div>
+                <div class="flex justify-between mb-5">
+                    <p class="mr-2">Kaffe/Te</p>
+                    <p class="mr-2 font-bold">20 kr</p>
+                </div>
+                <div class="flex justify-between mb-5">
+                    <p class="mr-2">Mineralvann/Brus</p>
+                    <p class="mr-2 font-bold">30 kr</p>
+                </div>
+                <div class="flex justify-between mb-5">
+                    <p class="mr-2">Kake/Bolle</p>
+                    <p class="mr-2 font-bold">30 kr</p>
+                </div>
+                <div class="flex justify-between mb-5">
+                    <p class="mr-2">Pølse</p>
+                    <p class="mr-2 font-bold">25 kr</p>
+                </div>
+                <div class="flex justify-between mb-5">
+                    <p class="mr-2">Saftis</p>
+                    <p class="mr-2 font-bold">25 kr</p>
+                </div>
+                <div class="flex justify-between mb-5">
+                    <p class="mr-2">Kroneis</p>
+                    <p class="mr-2 font-bold">25 kr</p>
+                </div>
+                </main>
+  <a id="back-to-top" href="#top" class="fixed z-[999] bottom-5 right-5 bg-gray-400 hover:bg-gray-200 text-white hover:text-black drop-shadow-xl hover:drop-shadow-md p-2 rounded-md transition-all duration-300"
+  aria-label="Back to top"
+><div class="flex gap-1"><p>&#8673</p><p></p>Til toppen</p></div></a>
             <img id="background-btm" src={background.src} alt="" fetchpriority="high" class="w-full rotate-180" />
         </section>
