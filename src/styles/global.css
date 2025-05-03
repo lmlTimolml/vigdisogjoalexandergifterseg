@@ -1,5 +1,9 @@
 @import 'tailwindcss';
 
+body {
+  font-size: 16px;
+}
+
 .noto-sans-100 {
   font-family: 'Noto Sans', sans-serif;
   font-optical-sizing: auto;
