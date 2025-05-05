@@ -30,3 +30,18 @@ body {
   font-style: normal;
   font-variation-settings: 'wdth' 100;
 }
+
+@theme {
+  --animate-move: move 4s ease-out infinite;
+  @keyframes move {
+    0% {
+      translate: -50px -50px;
+    }
+    10% {
+      translate: 70px 0px;
+    }
+    100% {
+      translate: 70px 0px;
+    }
+  }
+}
