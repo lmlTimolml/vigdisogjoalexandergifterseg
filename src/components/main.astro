@@ -1,23 +1,23 @@
 ---
-import background from '../assets/leaves_n_flag.png';
+import background from '../assets/topbanner_2026.png';
+import bottom from '../assets/bottombanner_2026.png';
 import point from '../assets/point.svg';
-import tegning_01 from '../assets/tegning_01.jpg'
-import tegning_02 from '../assets/tegning_02.jpg'
-import tegning_03 from '../assets/tegning_03.jpg'
-import tegning_04 from '../assets/tegning_04.jpg'
-import tegning_05 from '../assets/tegning_05.jpg'
-import tegning_06 from '../assets/tegning_06.jpg'
+import tegning_10 from '../assets/tegning_10.jpg'
+import tegning_09 from '../assets/tegning_09.jpg'
+import tegning_08 from '../assets/tegning_08.jpg'
+import tegning_07 from '../assets/tegning_07.jpg'
+import tegning_11 from '../assets/tegning_11.jpg'
 ---
 
 
 <main id="top" class="flex flex-col items-center w-full">
-<img id="background-top" src={background.src} alt="" fetchpriority="high" class="w-full" />
+<img id="background-top" src={background.src} alt="top-banner depicting norwegian flags and" fetchpriority="high" class="w-full" />
 
-	<header class="relative flex flex-col items-center w-full uppercase mx-5">
+	<!-- <header class="relative flex flex-col items-center w-full uppercase mx-5">
 		<h1 class="absolute font-extralight text-sm mt-[3px] -ml-[44px] sm:-ml-34">Velkommen til</h1>
 		<h1 class="absolute font-bold sm:text-2xl"><span class="text-4xl sm:text-5xl">17</span>.&nbsp;mai-feiring på Nærsnes</h1>
-		<h1 class="absolute font-bold text-3xl sm:text-5xl -top-[10px] sm:-top-6 ml-[188px] sm:ml-66">2025</h1>
-    </header>
+		<h1 class="absolute font-bold text-3xl sm:text-5xl -top-[10px] sm:-top-6 ml-[188px] sm:ml-66">2026</h1>
+    </header> -->
     <nav class="flex flex-col w-full items-center mt-20">
         <a href="#prog" class="py-1 text-center mb-1 w-full bg-gray-200 hover:bg-blue-700 text-black hover:text-white font-light hover:font-bold transition-all ease-linear duration-100">PROGRAM</a>
         <a href="#sang1" class="py-1 text-center mb-1 w-full bg-gray-200 hover:bg-blue-700 text-black hover:text-white font-light hover:font-bold transition-all ease-linear duration-100">JA VI ELSKER</a>
@@ -28,7 +28,7 @@ import tegning_06 from '../assets/tegning_06.jpg'
         <h2 class="font-bold text-2xl uppercase mb-2">Program for dagen</h2>
         <div class="flex mb-5">
             <h3 class="mr-2 font-bold">08:00</h3>
-            <p>Flaggheising på Nærsnes skole og ankeret.</p>
+            <p>Flaggheising på Nærsnes skole og ankeret (Joker).</p>
         </div>
         <div class="flex mb-5">
             <h3 class="mr-2 font-bold">11:30</h3>
@@ -36,23 +36,23 @@ import tegning_06 from '../assets/tegning_06.jpg'
         </div>
         <div class="flex mb-5">
             <h3 class="mr-2 font-bold">11:45</h3>
-            <p>Senest oppmøte på Nopec, oppstilling for barnetog.</p>
+            <p>Senest oppmøte Baardsrudveien 2, oppstilling barnetog.</p>
         </div>
         <div class="flex mb-5">
             <h3 class="mr-2 font-bold">12:00</h3>
-            <p>Barnetoget går fra Nopec, Baardsudveien 2. Toget går videre via Sundbyveien – Joker – Gartnerveien – Åkerhagan – Skolefaret – Nærsnes skole. Ved Joker spiller Frydenlund Musikkorps og alle synger “Norge i rødt, hvitt og blått.</p>
+            <p>Barnetoget går fra Baarsrudveien 2. Toget går videre via Sundbyveien – Joker – Gartnerveien – Åkerhagan – Skolefaret – Nærsnes skole. Ved Joker stopper Frydenlund Seniorkorps spiller til allsang.</p>
         </div>
         <div class="flex mb-5">
             <h3 class="mr-2 font-bold">12:45</h3>
-            <p>Barnetoget ankommer Nærsnes skole. Frydenlynd Musikkorps spiller med Katharina Frogner Kockum som forsanger. Alle synger; “Norge i rødt hvitt og blått”. Alle synger; “Ja, vi elsker” 1., 7., og 8. strofe.</p>
+            <p>Barnetoget ankommer Nærsnes skole. Frydenlund Seniorkorps spiller til allsang.</p>
         </div>
         <div class="flex mb-5">
             <h3 class="mr-2 font-bold">13:00</h3>
-            <p>Tale for dagen ved 7. klasse elever. Opptreden ved 4. trinns elever.</p>
+            <p>Tale for dagen ved 7. klasse elever. Opptreden ved 4. klasse-elever.</p>
         </div>
         <div class="flex mb-5">
             <h3 class="mr-2 font-bold">13:15</h3>
-            <p>Salg av kaffe, kaker, is, brus og pølser åpner. Lekeboder åpner. Lynloddsalg starter.</p>
+            <p>Bodene åpner: Kiosksalg inne og ute, lekeboder, lykkehjul og lynloddsalg.</p>
         </div>
         <div class="flex mb-5">
             <h3 class="mr-2 font-bold">14:30</h3>
@@ -172,54 +172,61 @@ import tegning_06 from '../assets/tegning_06.jpg'
                 <h2 class="font-bold text-[20px] mb-2">Prisliste Kiosk</h2>
                 <h3 class="relative bg-amber-600 px-3 py-2 rounded-sm font-bold text-white text-[20px] mb-5"><a href="https://qr.vipps.no/28/2/05/031/Wj-i3gG4M">ÅPNE VIPPS (#101830)</a><img id="point" src={point.src} alt="" fetchpriority="high" class="absolute w-10 top-4 animate-move" /></h3>
 
-                <div class="flex justify-between bg-gray-100 px-2 py-1">
-                    <p class="mr-2">Saft</p>
-                    <p class="mr-2 font-bold">10 kr</p>
-                </div>
                 <div class="flex justify-between bg-white px-2 py-1">
                     <p class="mr-2">Lykkehjul</p>
-                    <p class="mr-2 font-bold">10 kr</p>
+                    <p class="mr-2 font-bold">20 kr</p>
                 </div>
                 <div class="flex justify-between bg-gray-100 px-2 py-1">
                     <p class="mr-2">Lodd</p>
-                    <p class="mr-2 font-bold">20 kr</p>
+                    <p class="mr-2 font-bold">10 kr</p>
                 </div>
                 <div class="flex justify-between bg-white px-2 py-1">
                     <p class="mr-2">Kaffe/Te</p>
-                    <p class="mr-2 font-bold">20 kr</p>
+                    <p class="mr-2 font-bold">25 kr</p>
                 </div>
                 <div class="flex justify-between bg-gray-100 px-2 py-1">
                     <p class="mr-2">Mineralvann/Brus</p>
-                    <p class="mr-2 font-bold">30 kr</p>
+                    <p class="mr-2 font-bold">35 kr</p>
                 </div>
                 <div class="flex justify-between bg-white px-2 py-1">
-                    <p class="mr-2">Kake/Bolle</p>
+                    <p class="mr-2">Kake/Kanelbolle</p>
                     <p class="mr-2 font-bold">30 kr</p>
                 </div>
                 <div class="flex justify-between bg-gray-100 px-2 py-1">
-                    <p class="mr-2">Pølse</p>
-                    <p class="mr-2 font-bold">25 kr</p>
+                    <p class="mr-2">Pølse i lompe eller brød</p>
+                    <p class="mr-2 font-bold">35 kr</p>
                 </div>
                 <div class="flex justify-between bg-white px-2 py-1">
                     <p class="mr-2">Saftis</p>
                     <p class="mr-2 font-bold">20 kr</p>
                 </div>
                 <div class="flex justify-between bg-gray-100 px-2 py-1">
-                    <p class="mr-2">Kroneis</p>
+                    <p class="mr-2">Kroneis – jordbær/sjokolade</p>
                     <p class="mr-2 font-bold">25 kr</p>
+                </div>
+                <div class="flex justify-between bg-white px-2 py-1">
+                    <p class="mr-2">Jordbær i beger</p>
+                    <p class="mr-2 font-bold">25 kr</p>
+                </div>
+                <div class="flex justify-between bg-gray-100 px-2 py-1">
+                    <p class="mr-2">Juiceboks</p>
+                    <p class="mr-2 font-bold">20 kr</p>
+                </div>
+                <div class="flex justify-between bg-white px-2 py-1">
+                    <p class="mr-2">Slush</p>
+                    <p class="mr-2 font-bold">40 kr</p>
                 </div>
                 </section>
                 <section id="tegninger" class="w-full px-5 sm:w-[40%] max-w-[400px] flex flex-col gap-4">
                     <h2 class="font-bold text-[20px] uppercase mb-2">Tegninger fra barn på 4. trinn</h2>
-                    <img id="point" src={tegning_01.src} alt="17. mai-tegning, tegnet av elever i fjerde klasse." fetchpriority="high" class="w-full h-auto" />
-                    <img id="point" src={tegning_02.src} alt="17. mai-tegning, tegnet av elever i fjerde klasse." fetchpriority="high" class="w-full h-auto" />
-                    <img id="point" src={tegning_03.src} alt="17. mai-tegning, tegnet av elever i fjerde klasse." fetchpriority="high" class="w-full h-auto" />
-                    <img id="point" src={tegning_04.src} alt="17. mai-tegning, tegnet av elever i fjerde klasse." fetchpriority="high" class="w-full h-auto" />
-                    <img id="point" src={tegning_05.src} alt="17. mai-tegning, tegnet av elever i fjerde klasse." fetchpriority="high" class="w-full h-auto" />
-                    <img id="point" src={tegning_06.src} alt="17. mai-tegning, tegnet av elever i fjerde klasse." fetchpriority="high" class="w-full h-auto" />
+                    <img id="point" src={tegning_10.src} alt="17. mai-tegning, tegnet av elever i fjerde klasse." fetchpriority="high" class="w-full h-auto" />
+                    <img id="point" src={tegning_09.src} alt="17. mai-tegning, tegnet av elever i fjerde klasse." fetchpriority="high" class="w-full h-auto" />
+                    <img id="point" src={tegning_08.src} alt="17. mai-tegning, tegnet av elever i fjerde klasse." fetchpriority="high" class="w-full h-auto" />
+                    <img id="point" src={tegning_07.src} alt="17. mai-tegning, tegnet av elever i fjerde klasse." fetchpriority="high" class="w-full h-auto" />
+                    <img id="point" src={tegning_11.src} alt="17. mai-tegning, tegnet av elever i fjerde klasse." fetchpriority="high" class="w-full h-auto" />
                 </section>
   <a id="back-to-top" href="#top" class="fixed z-[999] bottom-5 right-5 bg-gray-400 hover:bg-gray-200 text-white hover:text-black drop-shadow-xl hover:drop-shadow-md p-2 rounded-md transition-all duration-300"
   aria-label="Back to top"
 ><div class="flex gap-1"><p>&#8673</p><p></p>Til toppen</p></div></a>
-            <img id="background-btm" src={background.src} alt="" fetchpriority="high" class="w-full rotate-180" />
+            <img id="background-btm" src={bottom.src} alt="" fetchpriority="high" class="w-full" />
             </main>
