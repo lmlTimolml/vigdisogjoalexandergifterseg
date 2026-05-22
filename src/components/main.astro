@@ -2,22 +2,28 @@
 import background from '../assets/topbanner_2026.png';
 import bottom from '../assets/bottombanner_2026.png';
 import point from '../assets/point.svg';
+import tegning_10 from '../assets/tegning_10.jpg'
+import tegning_09 from '../assets/tegning_09.jpg'
+import tegning_08 from '../assets/tegning_08.jpg'
+import tegning_07 from '../assets/tegning_07.jpg'
+import tegning_11 from '../assets/tegning_11.jpg'
 ---
 
 
 <main id="top" class="flex flex-col items-center w-full">
 <img id="background-top" src={background.src} alt="top-banner depicting norwegian flags and" fetchpriority="high" class="w-full" />
 
-	<header class="relative flex flex-col items-center w-full uppercase mx-5">
+	<!-- <header class="relative flex flex-col items-center w-full uppercase mx-5">
 		<h1 class="absolute font-extralight text-sm mt-[3px] -ml-[44px] sm:-ml-34">Velkommen til</h1>
-		<h1 class="absolute font-bold sm:text-2xl"><span class="text-4xl sm:text-5xl">17</span>.&nbsp;bryllup i Drøbak</h1>
+		<h1 class="absolute font-bold sm:text-2xl"><span class="text-4xl sm:text-5xl">17</span>.&nbsp;mai-feiring på Nærsnes</h1>
 		<h1 class="absolute font-bold text-3xl sm:text-5xl -top-[10px] sm:-top-6 ml-[188px] sm:ml-66">2026</h1>
-    </header>
+    </header> -->
     <nav class="flex flex-col w-full items-center mt-20">
         <a href="#prog" class="py-1 text-center mb-1 w-full bg-gray-200 hover:bg-blue-700 text-black hover:text-white font-light hover:font-bold transition-all ease-linear duration-100">PROGRAM</a>
         <a href="#sang1" class="py-1 text-center mb-1 w-full bg-gray-200 hover:bg-blue-700 text-black hover:text-white font-light hover:font-bold transition-all ease-linear duration-100">JA VI ELSKER</a>
-        <a href="#sang2" class="py-1 text-center mb-1 w-full bg-gray-200 hover:bg-blue-700 text-black hover:text-white font-light hover:font-bold transition-all ease-linear duration-100">NORGE I RØDT, HVITT OG BLÅTT</a></nav>
-        <a href="#priser" class="py-1 text-center mb-1 w-full bg-gray-200 hover:bg-blue-700 text-black hover:text-white font-light hover:font-bold transition-all ease-linear duration-100">PRISLISTE KIOSK</a></nav>
+        <a href="#sang2" class="py-1 text-center mb-1 w-full bg-gray-200 hover:bg-blue-700 text-black hover:text-white font-light hover:font-bold transition-all ease-linear duration-100">NORGE I RØDT, HVITT OG BLÅTT</a>
+        <a href="#priser" class="py-1 text-center mb-1 w-full bg-gray-200 hover:bg-blue-700 text-black hover:text-white font-light hover:font-bold transition-all ease-linear duration-100">PRISLISTE KIOSK</a>
+        <a href="#tegninger" class="py-1 text-center mb-1 w-full bg-gray-200 hover:bg-blue-700 text-black hover:text-white font-light hover:font-bold transition-all ease-linear duration-100">TEGNINGER</a></nav>
     <section id="prog" class="mt-10 max-w-[55ch] mx-10">
         <h2 class="font-bold text-2xl uppercase mb-2">Program for dagen</h2>
         <div class="flex mb-5">
@@ -211,6 +217,14 @@ import point from '../assets/point.svg';
                     <p class="mr-2">Slush</p>
                     <p class="mr-2 font-bold">40 kr</p>
                 </div>
+                </section>
+                <section id="tegninger" class="w-full px-5 sm:w-[40%] max-w-[400px] flex flex-col gap-4">
+                    <h2 class="font-bold text-[20px] uppercase mb-2">Tegninger fra barn på 4. trinn</h2>
+                    <img id="point" src={tegning_10.src} alt="17. mai-tegning, tegnet av elever i fjerde klasse." fetchpriority="high" class="w-full h-auto" />
+                    <img id="point" src={tegning_09.src} alt="17. mai-tegning, tegnet av elever i fjerde klasse." fetchpriority="high" class="w-full h-auto" />
+                    <img id="point" src={tegning_08.src} alt="17. mai-tegning, tegnet av elever i fjerde klasse." fetchpriority="high" class="w-full h-auto" />
+                    <img id="point" src={tegning_07.src} alt="17. mai-tegning, tegnet av elever i fjerde klasse." fetchpriority="high" class="w-full h-auto" />
+                    <img id="point" src={tegning_11.src} alt="17. mai-tegning, tegnet av elever i fjerde klasse." fetchpriority="high" class="w-full h-auto" />
                 </section>
   <a id="back-to-top" href="#top" class="fixed z-[999] bottom-5 right-5 bg-gray-400 hover:bg-gray-200 text-white hover:text-black drop-shadow-xl hover:drop-shadow-md p-2 rounded-md transition-all duration-300"
   aria-label="Back to top"
